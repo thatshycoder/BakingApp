@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BakingApp</string>
+
+    <string name="select_step">Click on a step to view it\'s instructions</string>
+
+    <!-- Extras -->
+    <string name="recipe">recipe</string>
+    <string name="ingredient">ingredients</string>
+    <string name="steps">steps</string>
+    <string name="description">description</string>
+    <string name="videoUrl">videoUrl</string>
+
+    <!-- Error -->
+    <string name="error_no_internet">You\'re currently offline. Kindly connect to the internet</string>
+    <string name="error_unknown">Something went wrong. Please retry</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_video">No video available for this step</string>
+
+    <!-- Widget-->
+    <string name="last_viewed_ingredient">Last viewed ingredients</string>
+</resources>

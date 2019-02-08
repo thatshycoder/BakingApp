@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/recipe_list_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rcp_list_container"
+        android:layout_marginBottom="@dimen/rcp_list_container_bottom"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/rcp_list_padding"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/rcp_list_size"
+        app:layout_constraintBottom_toBottomOf="@+id/recipe_list_container"
+        app:layout_constraintEnd_toEndOf="@+id/recipe_list_container"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recipe_list_container"
+        app:layout_constraintTop_toTopOf="@+id/recipe_list_container"
+        tools:text="TextView" />
+</android.support.constraint.ConstraintLayout>

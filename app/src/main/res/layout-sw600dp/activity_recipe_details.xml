@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/two_pane"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/ingredient_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/recipe_ingredients"
+                android:name="com.shycoder.android.bakingapp.fragments.RecipeIngredientsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/container_padding"
+                android:layout_marginTop="4dp" />
+
+            <fragment
+                android:id="@+id/recipe_steps"
+                android:name="com.shycoder.android.bakingapp.fragments.RecipeStepsListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/container_padding" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/step_detail_tab"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/container_padding">
+
+            <TextView
+                android:id="@+id/tab_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_large"
+                android:text="@string/select_step" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
